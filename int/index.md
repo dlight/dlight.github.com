@@ -61,9 +61,9 @@ A prova de Nash é uma prova por redução ao absurdo:
 A prova por redução ao absurdo levou o Nash a afirmar a existência de uma
 estratégia vencedora mesmo sem ter construído ela em sua mente.
 
-Brouwer quer rejeitar esse tipo de prova, mas ela segue as regras da lógica! <!-- .element: class="fragment" -->
+Brouwer queria rejeitar esse tipo de raciocínio, mas ele segue as regras da lógica! <!-- .element: class="fragment" -->
 
-... talvez podemos mudar as regras da lógica? <!-- .element: class="fragment" -->
+... mas talvez podemos mudar as regras da lógica? <!-- .element: class="fragment" -->
 
 ---
 
@@ -74,11 +74,9 @@ Brouwer quer rejeitar esse tipo de prova, mas ela segue as regras da lógica! <!
 
 ---
 
-A lógica intuicionista não é a lógica do verdadeiro/falso, e sim do "posso provar" ou "posso refutar"
+A lógica intuicionista não é a lógica do verdadeiro ou falso, e sim do "posso provar" ou "posso refutar"
 
 ---
-
-## Proposições atômicas
 
 | Proposição  | Lógica clássica <!-- .element: class="fragment" data-fragment-index="1" -->  | Lógica intuicionista <!-- .element: class="fragment" data-fragment-index="2" -->  |
 | :--------: |:-------------:|:-------------:|
@@ -107,7 +105,7 @@ Na lógica intuicionista, a negação $\neg P$ é definida como $P \to \bot$
 
 Afirmar $\neg P$ significa que se, hipoteticamente, pudessemos provar $P$, então teríamos uma prova do absurdo. <!-- .element: class="fragment" -->
 
-<div>Mas isso é o mesmo que *refutar* $P$!</div> <!-- .element: class="fragment" -->
+<div>Mas isso é o mesmo que <em>refutar</em> $P$!</div> <!-- .element: class="fragment" -->
 
 ---
 
@@ -159,3 +157,41 @@ o primeiro jogador tem uma estratégia vencedora. <!-- .element: class="fragment
 
 Só podemos afirmar que o jogador de fato tem essa estratégia se pudermos
 dizer exatamente no que consiste essa estratégia. <!-- .element: class="fragment" -->
+
+---
+
+## Teorema de Glivenko (tradução da dupla negação)
+
+Se $P$ pode ser provado na lógica clássica, $\neg \neg P$ pode ser provado na lógica intuicionista (e vice versa)
+
+<small>Isso ocorre porque talvez a redução por absurdo possa ter sido usada durante a prova</small>
+
+Ou em outras palavras: <!-- .element: class="fragment" data-fragment-index="1" -->
+
+Se P é verdade na lógica clássica, não podemos refutar P na lógica intuicionista (e vice versa) <!-- .element: class="fragment" data-fragment-index="1" -->
+
+---
+
+## Tradução da dupla negação
+
+Por exemplo: a lei do terceiro excluído $P \lor \neg P$ não pode ser refutada na lógica intuicionista
+
+Ou seja, $\neg \neg (P \lor \neg P)$ é válido intuicionisticamente
+
+---
+
+## Tradução da dupla negação
+
+Podemos interpretar $P \to \neg \neg P$ como "se P pode ser provado na lógica intuicionista, P pode ser provado na lógica clássica", o que está correto
+
+<small>Mas o contrário, $\neg \neg P \to P$ seria "se P vale classicamente, P também vale intuicionisticamente", o que não é o caso</small> <!-- .element: class="fragment" -->
+
+<small>... mas $\neg \neg (\neg \neg P \to P)$, que é "na lógica clássica, podemos eliminar a dupla negação", pode ser provado na lógica intuicionista!</small> <!-- .element: class="fragment" -->
+
+---
+
+A lógica intuicionista é mais expressiva: expressa tanto o pensamento clássico (pela transformação da dupla negação), quanto o intuicionista
+
+E ela nunca contradiz a lógica clássica: apenas diz que não há fundamentos para certos resultados, mas sem os refutar <!-- .element: class="fragment" -->
+
+---
